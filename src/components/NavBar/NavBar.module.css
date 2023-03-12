@@ -1,0 +1,15 @@
+.nav {
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+}
+.nav a:hover{
+    color: rgb(185, 98, 193);
+}
+.link{
+    color: white;
+}
+.active{
+    color: gold;
+ }

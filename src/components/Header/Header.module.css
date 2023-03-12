@@ -1,0 +1,19 @@
+
+
+.header {
+    grid-area: header;
+    background-color: bisque;
+    display: flex;
+}
+.logo{
+    height: 100%;
+}
+.name_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 10px;
+}
