@@ -6,7 +6,7 @@ function Header(){
         <header className={s.header}>
         <img className={s.logo} src={Logo} alt="#" />
           <div className={s.name_header}>
-              SOCIAL NETWORK
+              <h1>SOCIAL NETWORK</h1>
           </div>
        </header>
     )

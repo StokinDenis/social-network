@@ -29,16 +29,16 @@ function Dialog(){
             </div>
             <div className={s.messages}>
                 <div className={s.message_text}>
-                  i'am gay
+               Hello I'am Kolya
                 </div>
                 <div className={s.message_text}>
-                  i'am cat
+                 how are you?
                 </div>
                 <div className={s.message_text}>
-                    ууу сука ща затоксичу
+                    i think it's best website
                 </div>
                 <div className={s.message_text}>
-                    я ноунейм
+                    Hello
                 </div>
             </div>
         </div>
