@@ -1,19 +1,30 @@
 import s from './Dialog.module.css'
+import {NavLink} from "react-router-dom";
+
 function Dialog(){
     return(
         <div className={s.dialogs}>
             <div className={s.names}>
-                <div className={s.name}>
-                  Kolya Klimovich
-                </div>
-                <div className={s.name}>
-                   Kiryl Shahnitsky
-                </div>
-                <div className={s.name}>
-                   Anton Grinkevich
-                </div>
-                <div className={s.name}>
-                   Ivan Ivanov
+                <div className={s.names}>
+                    <NavLink to="/dialog/1">
+                        Kolya Klimovich
+                    </NavLink>
+                    <div className={s.name}>
+                        <NavLink to="/dialog/2">
+                            Kiryl Shahnitsky
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink to="/dialog/3">
+                            Anton Grinkevich
+                        </NavLink>
+                    </div>
+                    <div className={s.name}>
+                        <NavLink to="/dialog/4">
+                            Ivan Ivanov
+                        </NavLink>
+                    </div>
+
                 </div>
             </div>
             <div className={s.messages}>
