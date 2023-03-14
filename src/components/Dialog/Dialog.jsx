@@ -13,7 +13,7 @@ function DialogItem(props){
 function MessageItem(props){
     return(
         <div className={s.message_text}>
-            {props.content}
+            {props.message}
         </div>
     )
 }
@@ -27,10 +27,10 @@ function Dialog(){
                 <DialogItem nameInterlocutor={"Anton"} id={"/4"}/>
             </div>
             <div className={s.messages}>
-                <MessageItem content={"hello"}/>
-                <MessageItem content={"how are you?"}/>
-                <MessageItem content={"We'll meet tomorrow?"}/>
-                <MessageItem content={"Yes i can"}/>
+                <MessageItem message={"hello"}/>
+                <MessageItem message={"how are you?"}/>
+                <MessageItem message={"We'll meet tomorrow?"}/>
+                <MessageItem message={"Yes i can"}/>
             </div>
         </div>
     )
