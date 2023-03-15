@@ -1,10 +1,9 @@
-
-
 .header {
     grid-area: header;
     background-color: bisque;
     display: flex;
 }
+
 .logo{
     height: 100%;
 }
