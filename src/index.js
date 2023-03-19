@@ -5,11 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
+let dialogData = [
+    {name: "Kolya", id: "/1"},
+    {name: "Kiryl", id: "/2"},
+    {name: "Leha", id: "/3"},
+    {name: "Anton", id: "/4"}
+]
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
-    <App />
+    <App dialogData={dialogData}/>
     </BrowserRouter>
   </React.StrictMode>
 );

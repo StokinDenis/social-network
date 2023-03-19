@@ -4,14 +4,9 @@ import DialogItem from "./DialogItem/DialogItem";
 import MessageItem from "./MessageItem/MessageItem"
 
 
-function Dialog(){
+function Dialog(props){
 
-    let dialogData = [
-        {name: "Kolya", id: "/1"},
-        {name: "Kiryl", id: "/2"},
-        {name: "Leha", id: "/3"},
-        {name: "Anton", id: "/4"}
-    ]
+    let dialogData=props.dialogData
 
     let messagesDate=[
         {message: "hello", id: 1},
