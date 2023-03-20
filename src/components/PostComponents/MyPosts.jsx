@@ -12,13 +12,9 @@ function Post(props){
 }
 function MyPosts(props){
 
-    let informationInPosts = [
-        {contentPost: "I like web development, like it if you like it too", likeCount: 35},
-        {contentPost: "sometimes I can't keep up with my thoughts", likeCount: 74},
-        {contentPost: "I once dreamed of an endless summer", likeCount: 23},
-    ]
+    let informationInPosts = props.informationInPost
 
-    let itemPost = informationInPosts.map((item)=><Post infoPost = {item.contentPost} likeCount={item.like}/>)
+    let itemPost = informationInPosts.map((item)=><Post infoPost = {item.contentPost} likeCount={item.likeCount}/>)
 
     return(
         <div className={s.my_posts}>

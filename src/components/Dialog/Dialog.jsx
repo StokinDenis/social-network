@@ -8,12 +8,7 @@ function Dialog(props){
 
     let dialogData=props.dialogData
 
-    let messagesDate=[
-        {message: "hello", id: 1},
-        {message: "how are you?", id: 2},
-        {message: "We'll meet tomorrow?", id: 3},
-        {message: "Yes i can", id: 4}
-    ]
+    let messagesDate=props.messageData
 
     let dialogElements = dialogData.map(item => <DialogItem nameInterlocutor={item.name} id={item.id}/>)
 
