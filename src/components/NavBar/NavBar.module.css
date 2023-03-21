@@ -18,4 +18,37 @@
     background-color: #ded6d6;
     margin-top: 20px;
 }
+.friends__name_section{
+    display: flex;
+    justify-content: center;
+}
+.friends{
+    margin-top: 10px;
+}
+.friends__elements_container{
+    display: flex;
+    justify-content: space-around;
+}
+.friends__element_image{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.friends__element{
+    margin-right: 30px;
+}
+.friends__element:first-child{
+    margin-right: 30px;
+    margin-left: 30px;
+}
 
+.friends__name_friend{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.f{
+    display: flex;
+    justify-content: center;
+}
