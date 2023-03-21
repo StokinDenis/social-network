@@ -11,6 +11,8 @@ function NavBar(){
                 <li> <NavLink to="/musicPage" className = { navData => navData.isActive ? s.active : s.link }>Music</NavLink></li>
             </ul>
             <div><NavLink to="/settingPage" className = {navData => navData.isActive ? s.active : s.link}>Setting</NavLink></div>
+            <div className={s.line}></div>
+
         </nav>
     )
 }

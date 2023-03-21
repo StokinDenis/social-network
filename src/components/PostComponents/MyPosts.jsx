@@ -23,7 +23,7 @@ function MyPosts(props){
                     <textarea className={s.textarea_post} name="#" id="" ></textarea>
                 </div>
                 <div className={s.block_button}>
-                <button className={s.button_add_post}>Add post</button>
+                    <button className={s.button_add_post}>Add post</button>
                 </div>
             </div>
             <div>

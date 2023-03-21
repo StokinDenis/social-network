@@ -13,3 +13,9 @@
 .active{
     color: gold;
  }
+.line{
+    height: 1px;
+    background-color: #ded6d6;
+    margin-top: 20px;
+}
+
