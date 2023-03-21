@@ -23,25 +23,25 @@ function NavBar() {
                 </div>
                 <div className={s.friends__elements_container}>
                     <div className={s.friends__element}>
-                        <div className={s.f}>
+                        <div className={s.friends__block_width_image}>
                             <img className={s.friends__element_image} src={ava1} alt=""/>
                         </div>
                         <div className={s.friends__name_friend}>Alex</div>
                     </div>
                     <div className={s.friends__element}>
-                        <div className={s.f}>
+                        <div className={s.friends__block_width_image}>
                             <img className={s.friends__element_image} src={ava1} alt=""/>
                         </div>
                         <div className={s.friends__name_friend}>Dimon</div>
                     </div>
                     <div className={s.friends__element}>
-                        <div className={s.f}>
+                        <div className={s.friends__block_width_image}>
                             <img className={s.friends__element_image} src={ava1} alt=""/>
                         </div>
                         <div className={s.friends__name_friend}>Kolya</div>
                     </div>
                 </div>
-
+  
             </div>
         </nav>
     )
