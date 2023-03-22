@@ -14,7 +14,7 @@ function App(props) {
 
         <div className="app-wrapper">
             <Header />
-            <NavBar/>
+            <NavBar informationFriend={props.state.friendState}/>
             <div className="app-wrapper-content">
                 <Routes>
                     <Route path="/profile" element={<Profile informationInPost={props.state.profilePage.informationInPosts}/>} />

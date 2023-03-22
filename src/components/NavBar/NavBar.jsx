@@ -1,8 +1,8 @@
 import s from './NavBar.module.css'
 import {NavLink} from "react-router-dom";
-import ava1 from './../../image/ava1.jpg'
+import FriendBar from "./FriendBar/FriendBar";
 
-function NavBar() {
+function NavBar(props) {
     return (
         <nav className={s.nav}>
             <ul>
@@ -17,32 +17,7 @@ function NavBar() {
             <div><NavLink to="/settingPage"
                           className={navData => navData.isActive ? s.active : s.link}>Setting</NavLink></div>
             <div className={s.line}></div>
-            <div className={s.friends}>
-                <div className={s.friends__name_section}>
-                    Friends
-                </div>
-                <div className={s.friends__elements_container}>
-                    <div className={s.friends__element}>
-                        <div className={s.friends__block_width_image}>
-                            <img className={s.friends__element_image} src={ava1} alt=""/>
-                        </div>
-                        <div className={s.friends__name_friend}>Alex</div>
-                    </div>
-                    <div className={s.friends__element}>
-                        <div className={s.friends__block_width_image}>
-                            <img className={s.friends__element_image} src={ava1} alt=""/>
-                        </div>
-                        <div className={s.friends__name_friend}>Dimon</div>
-                    </div>
-                    <div className={s.friends__element}>
-                        <div className={s.friends__block_width_image}>
-                            <img className={s.friends__element_image} src={ava1} alt=""/>
-                        </div>
-                        <div className={s.friends__name_friend}>Kolya</div>
-                    </div>
-                </div>
-  
-            </div>
+            <FriendBar informationFriend={props.informationFriend}/>
         </nav>
     )
 }

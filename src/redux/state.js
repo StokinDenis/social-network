@@ -1,3 +1,6 @@
+import ava1 from './../image/ava1.jpg'
+import ava2 from './../image/ava2.jfif'
+import ava3 from './../image/ava3.jpg'
 let state = {
     profilePage:{
         informationInPosts: [
@@ -19,6 +22,12 @@ let state = {
             {message: "We'll meet tomorrow?", id: 3},
             {message: "Yes i can", id: 4}
         ]
-    }
+    },
+    friendState:[
+        {avaFriend: ava1, nameFriend: "Alex"},
+        {avaFriend: ava2, nameFriend: "Kolya"},
+        {avaFriend: ava3, nameFriend: "Dimon"},
+        {avaFriend: ava3, nameFriend: "Dimon"},
+    ]
 }
 export default state;

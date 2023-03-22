@@ -1,0 +1,33 @@
+.friends__name_section{
+    display: flex;
+    justify-content: center;
+}
+.friends{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.friends__elements_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.friends__element_image{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.friends__element{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+.friends__name_friend{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.friends__block_width_image{
+    display: flex;
+    justify-content: center;
+}
