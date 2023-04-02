@@ -16,8 +16,8 @@ function Dialog(props){
 
     return(
         <div className={s.dialogs}>
-            <div className={s.names}>
-                {dialogElements}
+            <div>
+                    {dialogElements}
             </div>
             <div className={s.messages}>
                 {messagesElements}

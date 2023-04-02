@@ -17,6 +17,8 @@
     border-radius: 30px;
 }
 .friends__element{
+    display: flex;
+    justify-content: flex-start;
     margin-right: 30px;
     cursor: pointer;
 }

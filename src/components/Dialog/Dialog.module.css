@@ -1,8 +1,15 @@
 .dialogs{
     color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: 2fr 10fr;
+    display: flex;
 }
-.names{
-
+.message_text{
+    margin-bottom: 12px;
+}
+.name{
+    margin-bottom: 45px;
+    margin-right: 50px;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
 }
