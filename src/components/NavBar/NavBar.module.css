@@ -6,16 +6,20 @@
     min-width: 320px;
     width: 100%;
 }
-.nav a:hover{
+
+.nav a:hover {
     color: rgb(185, 98, 193);
 }
-.link{
+
+.link {
     color: white;
 }
-.active{
+
+.active {
     color: gold;
- }
-.line{
+}
+
+.line {
     height: 1px;
     background-color: #ded6d6;
     margin-top: 20px;

@@ -1,37 +1,44 @@
-.textarea_post{
- width: 500px;
+.textarea_post {
+    width: 500px;
     height: 200px;
     font-size: 20px;
 }
-.my_posts{
+
+.my_posts {
     margin-left: 10px;
     width: 500px;
 }
-.block_button{
- display: flex;
+
+.block_button {
+    display: flex;
     justify-content: flex-end;
 }
-.button_add_post{
+
+.button_add_post {
     width: 80px;
     height: 30px;
     border-radius: 5px;
     cursor: pointer;
     font-weight: 600;
 }
-.button_add_post:hover{
+
+.button_add_post:hover {
     background-color: #3f3f5e;
     color: white;
 }
-.post{
-     font-size: 30px;
-     font-weight: 700;
-     margin-bottom: 150px;
-     border: 2px solid black;
- }
-.post:first-child{
+
+.post {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 150px;
+    border: 2px solid black;
+}
+
+.post:first-child {
     margin-top: 100px;
 }
-.like_count{
+
+.like_count {
     display: flex;
     justify-content: flex-end;
     color: red;

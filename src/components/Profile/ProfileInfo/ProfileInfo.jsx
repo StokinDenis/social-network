@@ -1,5 +1,6 @@
 import ProfileImage from "../../imgProfile.jpg";
 import s from "./ProfileInfo.module.css"
+
 function ProfileInfo() {
     return (
         <div>
@@ -15,4 +16,5 @@ function ProfileInfo() {
         </div>
     )
 }
+
 export default ProfileInfo;

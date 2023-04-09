@@ -1,5 +1,5 @@
-function News(){
-    return(
+function News() {
+    return (
         <div>
             News
         </div>

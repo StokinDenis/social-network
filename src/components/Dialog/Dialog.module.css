@@ -1,15 +1,18 @@
-.dialogs{
+.dialogs {
     color: rgb(255, 255, 255);
     display: flex;
 }
-.message_text{
+
+.message_text {
     margin-bottom: 12px;
 }
-.name{
+
+.name {
     margin-bottom: 45px;
     margin-right: 50px;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: flex-end;
 }

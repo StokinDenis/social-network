@@ -1,8 +1,9 @@
 import s from "./MyPost.module.css"
 import React from "react";
 
-function Post(props){
-    return(
+
+function Post(props) {
+    return (
         <div className={s.post}>
             <div>
                 <div> {props.infoPost} </div>
@@ -12,21 +13,27 @@ function Post(props){
     )
 }
 
-function MyPosts(props){
+function MyPosts(props) {
 
     let informationInPosts = props.informationInPost
 
-    let itemPost = informationInPosts.map((item)=><Post infoPost = {item.contentPost} likeCount={item.likeCount}/>)
+    let itemPost = informationInPosts.map((item) => <Post infoPost={item.contentPost} likeCount={item.likeCount}/>)
 
+    let newPostElement = React.createRef()
 
-    return(
+    function newPost() {
+        let textPost = newPostElement.current.value
+        props.addPost(textPost)
+    }
+
+    return (
         <div className={s.my_posts}>
             <div>
                 <div>
                     <textarea className={s.textarea_post} name="#" id="" ref={newPostElement}></textarea>
                 </div>
                 <div className={s.block_button}>
-                    <button className={s.button_add_post} >Add post</button>
+                    <button className={s.button_add_post} onClick={newPost}>Add post</button>
                 </div>
             </div>
             <div>
@@ -35,4 +42,5 @@ function MyPosts(props){
         </div>
     )
 }
+
 export default MyPosts;

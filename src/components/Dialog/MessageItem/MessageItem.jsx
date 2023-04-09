@@ -1,24 +1,23 @@
 import s from "../Dialog.module.css";
 import React from "react";
 
-function MessageItem(props){
+function MessageItem(props) {
 
-    let newMessageElement = React.createRef();
+    let newMessageItem = React.createRef()
 
-   function showMessage(){
-       let text = newMessageElement.current.value;
-       alert(text)
-   }
+    function addMessage() {
+        let text = newMessageItem.current.value
+        alert(text)
+    }
 
-
-
-    return(
+    return (
         <div className={s.message_text}>
-            <textarea  name="" ref={newMessageElement}></textarea>
+            <textarea name="message_field" ref={newMessageItem}></textarea>
             <div className={s.button}>
-            <button onClick={showMessage}>Отправить</button>
+                <button onClick={addMessage}>Отправить</button>
             </div>
         </div>
     )
 }
+
 export default MessageItem

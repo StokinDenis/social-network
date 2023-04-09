@@ -1,8 +1,8 @@
 import {NavLink} from "react-router-dom";
 import s from "./../Dialog.module.css"
 
-function DialogItem(props){
-    return(
+function DialogItem(props) {
+    return (
         <div className={s.name}>
             <NavLink to={"/dialog" + props.id}>
                 {props.nameInterlocutor}
@@ -10,4 +10,5 @@ function DialogItem(props){
         </div>
     )
 }
+
 export default DialogItem;

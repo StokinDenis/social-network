@@ -4,10 +4,11 @@
     display: flex;
 }
 
-.logo{
+.logo {
     height: 100%;
 }
-.name_header{
+
+.name_header {
     display: flex;
     justify-content: center;
     align-items: center;

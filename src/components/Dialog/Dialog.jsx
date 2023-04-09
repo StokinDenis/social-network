@@ -4,20 +4,20 @@ import DialogItem from "./DialogItem/DialogItem";
 import MessageItem from "./MessageItem/MessageItem"
 
 
-function Dialog(props){
+function Dialog(props) {
 
-    let dialogData=props.dialogData
+    let dialogData = props.dialogData
 
-    let messagesDate=props.messageData
+    let messagesDate = props.messageData
 
     let dialogElements = dialogData.map(item => <DialogItem nameInterlocutor={item.name} id={item.id}/>)
 
-    let messagesElements = messagesDate.map(message=><MessageItem message={message.message}/>)
+    let messagesElements = messagesDate.map(message => <MessageItem message={message.message}/>)
 
-    return(
+    return (
         <div className={s.dialogs}>
             <div>
-                    {dialogElements}
+                {dialogElements}
             </div>
             <div className={s.messages}>
                 {messagesElements}

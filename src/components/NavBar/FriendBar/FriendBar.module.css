@@ -1,22 +1,26 @@
-.friends__name_section{
+.friends__name_section {
     display: flex;
     justify-content: center;
 }
-.friends{
+
+.friends {
     margin-top: 10px;
     margin-left: 20px;
 }
-.friends__elements_container{
+
+.friends__elements_container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.friends__element_image{
+
+.friends__element_image {
     width: 60px;
     height: 60px;
     border-radius: 30px;
 }
-.friends__element{
+
+.friends__element {
     display: flex;
     justify-content: flex-start;
     margin-right: 30px;
@@ -24,12 +28,13 @@
 }
 
 
-.friends__name_friend{
+.friends__name_friend {
     font-size: 25px;
     display: flex;
     justify-content: center;
 }
-.friends__block_width_image{
+
+.friends__block_width_image {
     display: flex;
     justify-content: center;
 }
