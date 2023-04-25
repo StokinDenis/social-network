@@ -41,6 +41,7 @@ export function addPost(contentPost, likeCount) {
     }
     state.profilePage.informationInPosts.push(info)
     render(state)
+    updatePostText("")
 }
 export function updatePostText(contentPost) {
 
