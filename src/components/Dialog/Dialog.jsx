@@ -14,6 +14,9 @@ function Dialog(props) {
 
     let messagesElements = messagesDate.map(message => <MessageItem message={message.message}/>)
 
+    
+
+
     return (
         <div className={s.dialogs}>
             <div>

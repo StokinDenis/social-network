@@ -18,11 +18,8 @@ function App(props) {
             <NavBar informationFriend={props.state.friendState}/>
             <div className="app-wrapper-content">
                 <Routes>
-                    <Route path="/profile"
-                           element={<Profile informationInPost={props.state.profilePage.informationInPosts}
-                                             addPost={props.addPost}/>}/>
-                    <Route path="/dialog*" element={<Dialog dialogData={props.state.dialogsPage.dialogData}
-                                                            messageData={props.state.dialogsPage.messagesDate}/>}/>
+                    <Route path="/profile" element={<Profile profilePage={props.state.profilePage} addPost={props.addPost} updatePostText={props.updatePostText}/>}/>
+                    <Route path="/dialog*" element={<Dialog dialogData={props.state.dialogsPage.dialogData} messageData={props.state.dialogsPage.messagesDate}/>}/>
                     <Route path="/news" element={<News/>}/>
                     <Route path="/musicPage" element={<MusicPage/>}/>
                     <Route path="/settingPage" element={<SettingPage/>}/>

@@ -15,23 +15,30 @@ function Post(props) {
 
 function MyPosts(props) {
 
-    let informationInPosts = props.informationInPost
+    let informationInPosts = props.profilePage.informationInPosts
 
     let itemPost = informationInPosts.map((item) => <Post infoPost={item.contentPost} likeCount={item.likeCount}/>)
 
     let newPostElement = React.createRef()
 
     function newPost() {
-        let textPost = newPostElement.current.value
-        props.addPost(textPost)
+        let contentPost = newPostElement.current.value
+        props.addPost(contentPost,0)
     }
+
+    function onChange(){
+        let post = newPostElement.current.value
+        props.updatePostText(post)
+    }
+
 
     return (
         <div className={s.my_posts}>
             <div>
                 <div>
-                    <textarea className={s.textarea_post} name="#" id="" ref={newPostElement}></textarea>
+                    <textarea className={s.textarea_post}  ref={newPostElement} onChange={onChange} value={props.newPostText}/>
                 </div>
+
                 <div className={s.block_button}>
                     <button className={s.button_add_post} onClick={newPost}>Add post</button>
                 </div>
